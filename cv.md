@@ -48,6 +48,10 @@ function findOdd(A) {
 ### Work experience:
 Missing 
 
+---
+### Projects:
+[CV#1. Markdown & Git](https://github.com/nvalkovich/rsschool-cv)
+
 --- 
 ### Courses:
 * Layout tutorial for beginners (HTML Basics and CSS Basics) on code.mu 
