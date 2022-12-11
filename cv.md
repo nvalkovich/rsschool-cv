@@ -1,5 +1,7 @@
 # Valkovich Anastasiya
 
+<img src="avatar.jpg" alt="avatar" width="150"/>
+
 ### Contacts:
 * Location: Minsk, Belarus
 * Phone: +375 (33) 628-25-79
