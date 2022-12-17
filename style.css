@@ -1,3 +1,123 @@
-h1 {
-  color: red;
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto';
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  background: #145A32;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #27AE60;
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cv-title {
+  width: 100%;
+  text-align: center;
+  border-top: none;
+  border-bottom: 7px solid #145A32;
+}
+
+.cv-title h1 {
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.avatar-img {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.allotted-text {
+  color: #145A32;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #27AE60;
+  cursor: pointer;
+}
+
+.cv-section {
+  width: 100%;
+  border-top: 2px solid #145A32;
+  border-bottom: 2px solid #145A32;
+}
+
+.cv-section h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-left: 10px;
+}
+
+.cv-section ul {
+  list-style-type: square;
+}
+
+.cv-section p {
+  padding-left: 20px;
+}
+
+.code-listing {
+  color: #145A32;
+  padding-left: 20px;
+}
+
+.footer {
+  border-top: 7px solid #145A32;
+  border-bottom: 20px solid #145A32;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-data {
+  padding: 20px 0px;
+}
+
+.school-logo {
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  margin-bottom: -10px;
 }
