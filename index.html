@@ -2,13 +2,138 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="style.css" type="text/css">
   <meta charset="UTF-8">
-  <title>HTML, CSS &amp; Git Basics</title>
+  <title>CV</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-  <h1>HTML, CSS &amp; Git Basics</h1>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container main-container">
+
+      <section class="cv-title">
+        <h1>Anastasiya Valkovich</h1>
+        <p>student</p>
+        <img src="assets/img/avatar.jpg" class="avatar-img" alt="avatar">
+      </section>
+
+      <section class="cv-section" id="contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li><span class="allotted-text">Location:</span> Minsk, Belarus</li>
+          <li><span class="allotted-text">E-mail: </span>anastasiya.valkovich@mail.ru</li>
+          <li><span class="allotted-text">Discord:</span> Anastasiya (@nvalkovich)</li>
+          <li><span class="allotted-text">GitHub:</span> <a href="https://github.com/nvalkovich">@nvalkovich</a></li>
+        </ul>
+      </section>
+
+      <section class="cv-section" id="summary">
+        <h2>Summary</h2>
+        <p>
+          Previously, my work was related to medicine. I worked in a histological laboratory, but I did not see the
+          future in this for myself. I wanted to do intellectual work, learn and develop. I have discovered programming
+          and began to study HTML, CSS, and then JS. Now I'm aiming to become professional Frontend developer and get a
+          job in this specialty.
+        </p>
+      </section>
+
+      <section class="cv-section" id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5 (basics)</li>
+          <li>CSS3 (basics)</li>
+          <li>JavaScript (basics)</li>
+          <li>Git, GitHub</li>
+          <li>VS Code</li>
+        </ul>
+      </section>
+
+      <section class="cv-section" id="code">
+        <h2>Code example</h2>
+        <p>
+          <span class="allotted-text">Description</span>:
+          <i>Given an array of integers, find the one that appears an odd number of times.There will always be only one
+            integer that appears an odd number of times.</i>
+        </p>
+        <pre class="code-listing">
+function findOdd(A) {
+  const statistics = {};
+  for (let i = 0; i &lt; A.length; i++) {
+    const value = A[i];
+    statistics[value] = statistics.hasOwnProperty(value)
+      ? statistics[value] + 1
+      : 1;
+  }
+  for (const key in statistics) {
+    if (statistics[key] % 2 !== 0) return +key;
+  }
+}
+</pre>
+      </section>
+
+      <section class="cv-section" id="courses">
+        <h2>Courses</h2>
+        <ul>
+          <li>Free HTML course: teaching html layout for beginners on <a href="https://code-basics.com/ru">code-basics</a></li>
+          <li>Free CSS Course: Online Learning from Scratch on <a href="https://code-basics.com/ru">code-basics</a></li>
+          <li>Layout tutorial for beginners (HTML Basics and CSS Basics) on <a href="https://code.mu">code.mu</a></li>
+          <li>JavaScript Manual on <a href="https://learn.javascript.ru/">learn.javascript</a> (<i>in the process</i>)</li>
+          <li>Modern JavaScript - From Zero to Junior Specialist (2022) <a href="https://www.udemy.com/ru/">udemy</a> (<i>in the process</i>)</li>
+        </ul>
+      </section>
+
+      <section class="cv-section" id="education">
+        <h2>Education</h2>
+        <ul>
+          <li> Minsk State Medical College: laboratory diagnostics (2018 - 2020)</li>
+          <li> Belarusian State University: microbiology (2021 - 2026) (<i>studying now</i> ) </li>
+        </ul>
+      </section>
+
+      <section class="cv-section" id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://github.com/nvalkovich/rsschool-cv" class="allotted-text">RS School CV project</a></li>
+        </ul>
+      </section>
+
+      <section class="cv-section" id="english">
+        <h2>English</h2>
+        <p>English level: A2 (pre-intermediate)</p>
+      </section>
+      
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer-data">
+          <span>&#169;2022</span>
+          <a href="https://github.com/nvalkovich">nvalkovich</a>
+        </div>
+        <a href="https://rs.school/js/"><img src="assets/img/rsschool.svg" class="school-logo" alt="rs-school logo"></a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
